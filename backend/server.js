@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(morgan('dev'));
 
 
-app.use('/api', blogRoutes);
+app.use('/blog', blogRoutes);
 app.use('/user', userRoutes); 
 
 mongoose.connect(process.env.mongoDB_URL, {
